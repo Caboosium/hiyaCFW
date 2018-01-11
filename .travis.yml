@@ -13,6 +13,7 @@ install:
   - sudo perl devkitARMupdate.pl
   - wget http://sourceforge.net/projects/devkitpro/files/devkitARM/devkitARM_r46/devkitARM_r46-x86_64-linux.tar.bz2
   - tar -vxjf devkitARM_r46-x86_64-linux.tar.bz2
+  - mv ./devkitARM /home/travis/devkitPro -r
 
 script:
   - ls
