@@ -3,6 +3,10 @@ language: c
 sudo: required
 
 before_install:
+  - sudo add-apt-repository -y ppa:terry.guo/gcc-arm-embedded
+  - sudo add-apt-repository -y ppa:win-cross-dev/win-cross
+  - sudo apt-get update -qq -y
+  - sudo apt-get install -qq -y doxygen graphviz gcc-arm-none-eabi gcc-mingw-w64-x86-64 binutils-mingw-w64-x86-64 libssl-dev mingw64-openssl
   - wget http://sourceforge.net/projects/devkitpro/files/Automated%20Installer/devkitARMupdate.pl
   - export DEVKITPRO=/home/travis/devkitPro
   - export DEVKITARM=${DEVKITPRO}/devkitARM
