@@ -20,7 +20,7 @@ script:
   - ls
   - cd /home/travis/build/Caboosium/hiyaCFW
   - ls
-  - sudo make -j 2
+  - sudo make -j 1
 
 env:
  global:
