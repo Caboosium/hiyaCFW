@@ -12,4 +12,4 @@ install:
   - sudo perl devkitARMupdate.pl
 
 script:
-  - make -j 2 -f
+  - make -j 2 -k
