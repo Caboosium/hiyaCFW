@@ -8,5 +8,7 @@ before_install:
 install:
   - sudo perl devkitARMupdate.pl
 
+dist: precise
+
 script:
   - make
