@@ -4,19 +4,18 @@ sudo: required
 dist: percise
 
 before_install:
-  - sudo add-apt-repository -y ppa:terry.guo/gcc-arm-embedded
-  - sudo add-apt-repository -y ppa:win-cross-dev/win-cross
-  - sudo apt-get update -qq -y
-  - sudo apt-get install doxygen graphviz gcc-arm-none-eabi gcc-mingw-w64-x86-64 binutils-mingw-w64-x86-64 libssl-dev mingw64-openssl --allow-unauthenticated --fix-missing
   - wget http://sourceforge.net/projects/devkitpro/files/Automated%20Installer/devkitARMupdate.pl
   - export DEVKITPRO=/home/travis/devkitPro
   - export DEVKITARM=${DEVKITPRO}/devkitARM
-  - sudo apt install gcc
+  - git clone https://github.com/smealum/ctrulib.git
 
 install:
   - sudo perl devkitARMupdate.pl
+  - wget http://sourceforge.net/projects/devkitpro/files/devkitARM/devkitARM_r46/devkitARM_r46-x86_64-linux.tar.bz2
+  - tar -vxjf devkitARM_r46-x86_64-linux.tar.bz2
 
 script:
+  - ls
   - make -j 2 -k
 
 env:
