@@ -14,7 +14,7 @@ install:
   - wget http://sourceforge.net/projects/devkitpro/files/devkitARM/devkitARM_r46/devkitARM_r46-x86_64-linux.tar.bz2
   - tar -vxjf devkitARM_r46-x86_64-linux.tar.bz2
   - sudo rm /home/travis/devkitPro -r -f
-  - mv ./devkitARM /home/travis/devkitPro -R
+  - mv ./devkitARM /home/travis/devkitPro
 
 script:
   - ls
