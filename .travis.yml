@@ -1,5 +1,4 @@
 language: c
-script: "ls
-make -j 2"
+script: "ls && make -j 2"
 rvm:
  - make
