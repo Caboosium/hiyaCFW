@@ -1,5 +1,8 @@
 language: c
 
+sudo: required
+dist: precise
+
 before_install:
   - wget http://sourceforge.net/projects/devkitpro/files/Automated%20Installer/devkitARMupdate.pl
   - export DEVKITPRO=/home/travis/devkitPro
@@ -7,8 +10,6 @@ before_install:
 
 install:
   - sudo perl devkitARMupdate.pl
-
-dist: precise
 
 script:
   - make
