@@ -4,6 +4,8 @@ sudo: required
 dist: percise
 
 before_install:
+  - sudo cp /home/travis/build/Caboosium/hiyaCFW /home/travis/build/Caboosium/backup -r
+  - sudo cp /home/travis/build/Caboosium/backup/hiyaCFW /home/travis/build/Caboosium/hiyaCFW/restore -r
   - wget http://sourceforge.net/projects/devkitpro/files/Automated%20Installer/devkitARMupdate.pl
   - export DEVKITPRO=/home/travis/devkitPro
   - export DEVKITARM=${DEVKITPRO}/devkitARM
@@ -18,7 +20,7 @@ install:
 
 script:
   - ls
-  - cd /home/travis/build/Caboosium/hiyaCFW
+  - cd /home/travis/build/Caboosium/hiyaCFW/restore/hiyaCFW
   - ls
   - sudo make -j 1
 
