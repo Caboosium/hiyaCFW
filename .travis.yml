@@ -18,7 +18,8 @@ install:
 
 script:
   - ls
-  - make -j 2 -k
+  - cd $TRAVIS_BUILD_DIR
+  - make -j 2
 
 env:
  global:
