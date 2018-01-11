@@ -18,9 +18,9 @@ install:
 
 script:
   - ls
-  - cd $TRAVIS_BUILD_DIR/
+  - cd /home/travis/build/Caboosium/hiyaCFW
   - ls
-  - make -j 2
+  - sudo make -j 2
 
 env:
  global:
