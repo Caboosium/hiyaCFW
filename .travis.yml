@@ -20,5 +20,5 @@ install:
   - sudo chown -R travis:travis buildtools/wine
   - sudo chmod 777 buildtools/wine
 
-script:s
+script:
   - wine $TRAVIS_BUILD_DIR/buildtools/make/bin/make.exe -j 1
