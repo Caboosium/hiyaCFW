@@ -1,0 +1,14 @@
+prefix=/c/devkitPro/portlibs/armv6k
+exec_prefix=/c/devkitPro/portlibs/armv6k
+libdir=/c/devkitPro/portlibs/armv6k/lib
+includedir=/c/devkitPro/portlibs/armv6k/include
+
+Name: FreeType 2
+URL: http://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 18.1.12
+Requires:
+Requires.private: zlib
+Libs: -L${libdir} -lfreetype
+Libs.private: 
+Cflags: -I${includedir}/freetype2
