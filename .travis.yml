@@ -11,7 +11,7 @@ before_install:
   - export DEVKITARM=${DEVKITPRO}/devkitARM
 
 install:
-  - sudo apt-get install wine Xvfb
+  - sudo apt-get install wine xvfb
   - mkdir $TRAVIS_BUILD_DIR/buildtools/wine
   - export WINEPREFIX=$TRAVIS_BUILD_DIR/buildtools/wine
   - sudo chown -R travis:travis buildtools/wine
