@@ -13,7 +13,7 @@ before_install:
 install:
   - sudo apt-get install wine
   - mkdir $TRAVIS_BUILD_DIR/buildtools/wine
-  - export WINEPATH=$TRAVIS_BUILD_DIR/buildtools/wine
+  - export WINEPREFIX=$TRAVIS_BUILD_DIR/buildtools/wine
 
 script:
   - sudo wine $TRAVIS_BUILD_DIR/buildtools/make/bin/make.exe -j 1
