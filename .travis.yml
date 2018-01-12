@@ -14,7 +14,7 @@ install:
   - sudo apt-get install wine
   - mkdir $TRAVIS_BUILD_DIR/buildtools/wine
   - export WINEPREFIX=$TRAVIS_BUILD_DIR/buildtools/wine
-  - sudo chown -R travis: buildtools/wine
+  - sudo chown -R travis:travis buildtools/wine
   - sudo chmod 777 buildtools/wine
 
 script:
