@@ -14,12 +14,11 @@ before_install:
   - export DEVKITARM=${DEVKITPRO}/devkitARM
 
 install:
-  - sudo apt-get install wine xvfb
+  - sudo apt-get install wine
   - mkdir $TRAVIS_BUILD_DIR/buildtools/wine
   - export WINEPREFIX=$TRAVIS_BUILD_DIR/buildtools/wine
   - sudo chown -R travis:travis buildtools/wine
   - sudo chmod 777 buildtools/wine
 
-script:
-  - Xvfb :0 -screen 0 1024x768x16 &
+script:s
   - wine $TRAVIS_BUILD_DIR/buildtools/make/bin/make.exe -j 1
