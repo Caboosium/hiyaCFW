@@ -7,11 +7,11 @@ sudo: required
 dist: trusty
 
 before_install:
-  - export DEVKITPRO=/home/travis/build/Caboosium/hiyaCFW/buildtools/devkitPro
+  - export DEVKITPRO=$TRAVIS_BUILD_DIR/buildtools/devkitPro
   - export DEVKITARM=${DEVKITPRO}/devkitARM
 
 install:
-
+  - sudo apt-get install wine
 
 script:
-  - sudo wine /home/travis/build/Caboosium/hiyaCFW/buildtools/make/bin/make.exe -j 1
+  - sudo wine $TRAVIS_BUILD_DIR/buildtools/make/bin/make.exe -j 1
