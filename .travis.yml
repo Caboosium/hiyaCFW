@@ -18,7 +18,7 @@ install:
   - mkdir $TRAVIS_BUILD_DIR/buildtools/wine
   - export WINEPREFIX=$TRAVIS_BUILD_DIR/buildtools/wine
   - sudo chown -R root:root buildtools/wine
-  - sudo chmod 777 buildtools/wine
+  - sudo chmod 777 ./
 
 script:
   - sudo wine $TRAVIS_BUILD_DIR/buildtools/make/bin/make.exe -j 1
