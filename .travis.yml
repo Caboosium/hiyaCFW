@@ -14,4 +14,4 @@ install:
 
 
 script:
-  - make -j 1
+  - sudo make -j 1
