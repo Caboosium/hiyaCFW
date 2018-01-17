@@ -11,7 +11,7 @@ before_install:
   - export DEVKITARM=${DEVKITPRO}/devkitARM
 
 install:
-  - sudo chmod -R 777 $TRAVIS_BUILD_DIR
+  - sudo chmod -R 777 ${DEVKITPRO}
 
 
 script:
