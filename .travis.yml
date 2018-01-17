@@ -4,7 +4,7 @@ compiler:
   - gcc
 
 sudo: required
-dist: trusty
+dist: percise
 
 before_install:
   - export DEVKITPRO=$TRAVIS_BUILD_DIR/buildtools/devkitPro
