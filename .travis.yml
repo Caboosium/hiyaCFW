@@ -7,18 +7,18 @@ sudo: required
 dist: trusty
 
 before_install:
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
-  - sleep 3
+#  - "export DISPLAY=:99.0"
+#  - "sh -e /etc/init.d/xvfb start"
+#  - sleep 3
   - export DEVKITPRO=$TRAVIS_BUILD_DIR/buildtools/devkitPro
   - export DEVKITARM=${DEVKITPRO}/devkitARM
 
 install:
-  - sudo apt-get install wine
-  - mkdir $TRAVIS_BUILD_DIR/buildtools/wine
-  - export WINEPREFIX=$TRAVIS_BUILD_DIR/buildtools/wine
-  - sudo chown -R root:root ./
-  - sudo chmod 777 ./
+#  - sudo apt-get install wine
+#  - mkdir $TRAVIS_BUILD_DIR/buildtools/wine
+#  - export WINEPREFIX=$TRAVIS_BUILD_DIR/buildtools/wine
+#  - sudo chown -R root:root ./
+#  - sudo chmod 777 ./
 
 script:
   - sudo wine $TRAVIS_BUILD_DIR/buildtools/make/bin/make.exe -j 1

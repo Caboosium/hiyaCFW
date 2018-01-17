@@ -1,6 +1,6 @@
 This is cpp.info, produced by makeinfo version 5.2 from cpp.texi.
 
-Copyright (C) 1987-2015 Free Software Foundation, Inc.
+Copyright (C) 1987-2016 Free Software Foundation, Inc.
 
    Permission is granted to copy, distribute and/or modify this document
 under the terms of the GNU Free Documentation License, Version 1.3 or
@@ -131,7 +131,7 @@ Obsolete Features
 * Obsolete Features::
 
 
-   Copyright (C) 1987-2015 Free Software Foundation, Inc.
+   Copyright (C) 1987-2016 Free Software Foundation, Inc.
 
    Permission is granted to copy, distribute and/or modify this document
 under the terms of the GNU Free Documentation License, Version 1.3 or
@@ -1728,10 +1728,11 @@ the current function.  They tend to be useful in conjunction with
      '__cplusplus' to test whether a header is compiled by a C compiler
      or a C++ compiler.  This macro is similar to '__STDC_VERSION__', in
      that it expands to a version number.  Depending on the language
-     standard selected, the value of the macro is '199711L', as mandated
-     by the 1998 C++ standard; '201103L', per the 2011 C++ standard; an
-     unspecified value strictly larger than '201103L' for the
-     experimental languages enabled by '-std=c++1y' and '-std=gnu++1y'.
+     standard selected, the value of the macro is '199711L' for the 1998
+     C++ standard, '201103L' for the 2011 C++ standard, '201402L' for
+     the 2014 C++ standard, or an unspecified value strictly larger than
+     '201402L' for the experimental languages enabled by '-std=c++1z'
+     and '-std=gnu++1z'.
 
 '__OBJC__'
      This macro is defined, with value 1, when the Objective-C compiler
@@ -2172,7 +2173,7 @@ double underscores.
      length, respectively.
 
 '__GCC_HAVE_DWARF2_CFI_ASM'
-     This macro is defined when the compiler is emitting Dwarf2 CFI
+     This macro is defined when the compiler is emitting DWARF CFI
      directives to the assembler.  When this is defined, it is possible
      to emit those same directives in inline assembly.
 
@@ -4612,7 +4613,7 @@ single-letter options may _not_ be grouped: '-dM' is very different from
           will show all the predefined macros.
 
           If you use '-dM' without the '-E' option, '-dM' is interpreted
-          as a synonym for '-fdump-rtl-mach'.  *Note (gcc)Debugging
+          as a synonym for '-fdump-rtl-mach'.  *Note (gcc)Developer
           Options::.
 
      'D'
@@ -5555,52 +5556,52 @@ Node: Concatenation57827
 Node: Variadic Macros60935
 Node: Predefined Macros65722
 Node: Standard Predefined Macros66310
-Node: Common Predefined Macros72279
-Node: System-specific Predefined Macros92352
-Node: C++ Named Operators94375
-Node: Undefining and Redefining Macros95339
-Node: Directives Within Macro Arguments97437
-Node: Macro Pitfalls98985
-Node: Misnesting99518
-Node: Operator Precedence Problems100630
-Node: Swallowing the Semicolon102496
-Node: Duplication of Side Effects104519
-Node: Self-Referential Macros106702
-Node: Argument Prescan109111
-Node: Newlines in Arguments112866
-Node: Conditionals113817
-Node: Conditional Uses115646
-Node: Conditional Syntax117004
-Node: Ifdef117324
-Node: If120481
-Node: Defined122785
-Node: Else124066
-Node: Elif124636
-Node: Deleted Code125925
-Node: Diagnostics127172
-Node: Line Control128721
-Node: Pragmas132496
-Node: Other Directives137250
-Node: Preprocessor Output138300
-Node: Traditional Mode141498
-Node: Traditional lexical analysis142556
-Node: Traditional macros145059
-Node: Traditional miscellany148860
-Node: Traditional warnings149856
-Node: Implementation Details152053
-Node: Implementation-defined behavior152674
-Ref: Identifier characters153424
-Node: Implementation limits156313
-Node: Obsolete Features158986
-Node: Differences from previous versions161873
-Node: Invocation166075
-Ref: Wtrigraphs170527
-Ref: dashMF175304
-Ref: fdollars-in-identifiers185046
-Node: Environment Variables194849
-Node: GNU Free Documentation License197815
-Node: Index of Directives222960
-Node: Option Index225040
-Node: Concept Index231443
+Node: Common Predefined Macros72311
+Node: System-specific Predefined Macros92383
+Node: C++ Named Operators94406
+Node: Undefining and Redefining Macros95370
+Node: Directives Within Macro Arguments97468
+Node: Macro Pitfalls99016
+Node: Misnesting99549
+Node: Operator Precedence Problems100661
+Node: Swallowing the Semicolon102527
+Node: Duplication of Side Effects104550
+Node: Self-Referential Macros106733
+Node: Argument Prescan109142
+Node: Newlines in Arguments112897
+Node: Conditionals113848
+Node: Conditional Uses115677
+Node: Conditional Syntax117035
+Node: Ifdef117355
+Node: If120512
+Node: Defined122816
+Node: Else124097
+Node: Elif124667
+Node: Deleted Code125956
+Node: Diagnostics127203
+Node: Line Control128752
+Node: Pragmas132527
+Node: Other Directives137281
+Node: Preprocessor Output138331
+Node: Traditional Mode141529
+Node: Traditional lexical analysis142587
+Node: Traditional macros145090
+Node: Traditional miscellany148891
+Node: Traditional warnings149887
+Node: Implementation Details152084
+Node: Implementation-defined behavior152705
+Ref: Identifier characters153455
+Node: Implementation limits156344
+Node: Obsolete Features159017
+Node: Differences from previous versions161904
+Node: Invocation166106
+Ref: Wtrigraphs170558
+Ref: dashMF175335
+Ref: fdollars-in-identifiers185077
+Node: Environment Variables194880
+Node: GNU Free Documentation License197846
+Node: Index of Directives222991
+Node: Option Index225071
+Node: Concept Index231474
 
 End Tag Table
