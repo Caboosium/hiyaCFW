@@ -17,7 +17,7 @@ install:
   - # sudo perl devkitARMupdate.pl
   - # sudo rm ${DEVKITPRO}/devkitARM/bin/ndstool
   - # sudo cp ${DEVKITPRO2}/devkitARM/bin/ndstool ${DEVKITPRO}/devkitARM/bin/
-  - sudo chmod 777 ${DEVKITPRO}
+  - sudo chmod 777 ${DEVKITPRO} -R
 
 script:
   - sudo make -j 1
