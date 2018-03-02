@@ -7,7 +7,7 @@ sudo: required
 dist: trusty
 
 before_install:
-  - wget http://sourceforge.net/projects/devkitpro/files/Automated%20Installer/devkitARMupdate.pl
+  - # wget http://sourceforge.net/projects/devkitpro/files/Automated%20Installer/devkitARMupdate.pl
   - # export DEVKITPRO=$TRAVIS_BUILD_DIR/buildtools/devkitPro
   - # export DEVKITARM=$DEVKITPRO/devkitARM
   - export DEVKITPRO=/home/travis/devkitPro
