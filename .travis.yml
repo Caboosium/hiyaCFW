@@ -4,7 +4,7 @@ compiler:
   - gcc
 
 sudo: required
-dist: trusty
+#dist: trusty
 
 before_install:
   - wget http://sourceforge.net/projects/devkitpro/files/Automated%20Installer/devkitARMupdate.pl
@@ -14,8 +14,10 @@ before_install:
   - export DEVKITARM=${DEVKITPRO}/devkitARM
 
 install:
+  - mkdir ${DEVKITPRO}
   - sudo chmod 777 ${DEVKITPRO} -R
   - sudo perl devkitARMupdate.pl
+  - sudo chmod 777 ${DEVKITPRO} -R
   - # sudo rm ${DEVKITPRO}/devkitARM/bin/ndstool
   - # sudo cp ${DEVKITPRO2}/devkitARM/bin/ndstool ${DEVKITPRO}/devkitARM/bin/
 
