@@ -22,4 +22,4 @@ install:
   - # sudo cp ${DEVKITPRO2}/devkitARM/bin/ndstool ${DEVKITPRO}/devkitARM/bin/
 
 script:
-  - sudo make -j 1
+  - sudo make -j 1 -k
