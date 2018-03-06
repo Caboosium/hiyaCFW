@@ -14,7 +14,7 @@ before_install:
   - export DEVKITARM=${DEVKITPRO}/devkitARM
 
 install:
-  - # mkdir ${DEVKITPRO}
+  - mkdir ${DEVKITPRO}
   - sudo chmod 777 ${DEVKITPRO} -R
   - sudo perl devkitARMupdate.pl
   - sudo chmod 777 ${DEVKITPRO} -R
