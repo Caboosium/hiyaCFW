@@ -1,7 +1,7 @@
 language: c
 
-compiler:
-  - gcc
+#compiler:
+#  - gcc
 
 sudo: required
 #dist: trusty
@@ -22,4 +22,4 @@ install:
   - # sudo cp ${DEVKITPRO2}/devkitARM/bin/ndstool ${DEVKITPRO}/devkitARM/bin/
 
 script:
-  - sudo make -j 2
+  - sudo make -j 1
